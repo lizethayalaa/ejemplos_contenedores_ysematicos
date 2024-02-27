@@ -1,0 +1,83 @@
+La posición Propiedad
+La positionpropiedad especifica el tipo de método de posicionamiento utilizado para un elemento.
+
+Hay cinco valores de posición diferentes:
+
+static
+relative
+fixed
+absolute
+sticky
+Luego, los elementos se colocan utilizando las propiedades superior, inferior, izquierda y derecha. Sin embargo, estas propiedades no funcionarán a menos que position se establezcan primero. También funcionan de manera diferente según el valor de la posición.
+
+posición: estática;
+Los elementos HTML se colocan estáticos de forma predeterminada.
+
+Los elementos posicionados estáticamente no se ven afectados por las propiedades superior, inferior, izquierda y derecha.
+
+Un elemento con position: static;no está colocado de ninguna manera especial; siempre se coloca de acuerdo con el flujo normal de la página:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+div.static {
+position: static;
+border: 3px solid #73AD21;
+}
+
+
+div.relative {
+position: relative;
+left: 30px;
+border: 3px solid #73AD21;
+}
+
+div.fixed {
+position: fixed;
+bottom: 0;
+right: 0;
+width: 300px;
+border: 3px solid #73AD21;
+}
+
+div.relative {
+position: relative;
+width: 400px;
+height: 200px;
+border: 3px solid #73AD21;
+}
+
+div.absolute {
+position: absolute;
+top: 80px;
+right: 0;
+width: 200px;
+height: 100px;
+border: 3px solid #73AD21;
+}
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;
+background-color: green;
+border: 2px solid #4CAF50;
+}
+
+
+
+</style>
+</body>
+</html>
+
+

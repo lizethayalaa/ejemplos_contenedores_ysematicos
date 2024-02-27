@@ -1,0 +1,61 @@
+Desbordamiento de CSS
+La overflowpropiedad especifica si se recortará el contenido o se agregarán barras de desplazamiento cuando el contenido de un elemento sea demasiado grande para caber en el área especificada.
+
+La overflowpropiedad tiene los siguientes valores:
+
+visible- Por defecto. El desbordamiento no se recorta. El contenido se muestra fuera del cuadro del elemento.
+hidden- El desbordamiento se recorta y el resto del contenido será invisible.
+scroll- Se recorta el desbordamiento y se agrega una barra de desplazamiento para ver el resto del contenido.
+auto- Similar a scroll, pero agrega barras de desplazamiento solo cuando es necesario
+Nota: La overflowpropiedad solo funciona para elementos de bloque con una altura especificada.
+
+Nota: En OS X Lion (en Mac), las barras de desplazamiento están ocultas de forma predeterminada y solo se muestran cuando se usan (aunque esté configurado "overflow:scroll").
+
+desbordamiento: visible
+De forma predeterminada, el desbordamiento es visible, lo que significa que no se recorta y se representa fuera del cuadro del elemento:
+
+Puede utilizar la propiedad de desbordamiento cuando desee tener un mejor control del diseño. La propiedad de desbordamiento especifica qué sucede si el contenido desborda el cuadro de un elemento.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <style>
+
+div {
+  width: 200px;
+  height: 65px;
+  background-color: coral;
+  overflow: visible;
+}
+
+
+div {
+  overflow: hidden;
+}
+
+div {
+  overflow: scroll;
+}
+
+div {
+  overflow: auto;
+}
+
+div {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
+}
+
+</style>
+</body>
+</html>
+
+

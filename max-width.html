@@ -1,0 +1,33 @@
+Usando ancho, ancho máximo y margen: auto;
+Como se mencionó en el capítulo anterior; un elemento a nivel de bloque siempre ocupa todo el ancho disponible (se extiende hacia la izquierda y hacia la derecha tanto como puede).
+
+Establecer el valor width de un elemento a nivel de bloque evitará que se estire hasta los bordes de su contenedor. 
+Luego, puede configurar los márgenes en automático, para centrar horizontalmente el elemento dentro de su contenedor. 
+El elemento ocupará el ancho especificado y el espacio restante se dividirá en partes iguales entre los dos márgenes:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+
+div.ex1 {
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+div.ex2 {
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+</style>
+</body>
+</html>

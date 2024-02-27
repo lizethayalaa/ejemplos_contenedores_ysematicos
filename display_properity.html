@@ -1,0 +1,48 @@
+#Anular el valor de visualización predeterminado
+Como se mencionó, cada elemento tiene un valor de visualización predeterminado. Sin embargo, puedes anular esto.
+
+Cambiar un elemento en línea a un elemento de bloque, o viceversa, puede ser útil para hacer que la página se vea de una manera específica y seguir los estándares web.
+
+Un ejemplo común es crear <li>elementos en línea para menús horizontales:
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  <body>
+
+  
+      <style>
+
+    li {
+  display: inline;
+}
+      
+      span {
+  display: block;
+}
+a {
+  display: block;
+}
+
+h1.hidden {
+  display: none;
+}
+
+h1.hidden {
+  visibility: hidden;
+}
+
+
+
+
+  </style>
+    
+    
+  </body>
+  </html>
+
